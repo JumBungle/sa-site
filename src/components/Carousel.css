@@ -52,10 +52,8 @@
 }
 
 .dragging {
-  scroll-snap-type: none;
   cursor: grab;
   user-select: none;
-  scroll-behavior: auto;
 }
 
 .carousel-no-transition {
