@@ -85,21 +85,34 @@ h1, h2, h3 {
 
 .about-page {
   background-image: url("/src/images/Brennan-hero.jpg");
-  background-size: 50% 100%;
-  background-position: right;
+  background-size: auto 100%;
+  background-position: top 0 left 50vw;
+  background-repeat: no-repeat;
+}
+
+.contact-page {
+  background-image: url("/src/images/Markham-dusk.jpg");
+  background-size: auto 100%;
+  background-position: top 0 right 50vw;
   background-repeat: no-repeat;
 }
 
 footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding: var(--std-padding);
-  text-align: right;
   background-color: var(--tertiary-color);
+  justify-content: flex-end;
+}
+
+footer > * {
+  margin-right: 20px;
 }
 
 footer p {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .hover-underline-animation {
@@ -114,7 +127,7 @@ footer p {
   width: 100%;
   transform: scaleX(0);
   height: 2px;
-  bottom: 0;
+  bottom: -10px;
   left: 0;
   background-color: var(--font-color);
   transform-origin: bottom right;
@@ -167,4 +180,25 @@ footer p {
 
 .text-container.no-after::after {
   display: none;
+}
+
+.contact-information-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.contact-information {
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.contact-information:last-of-type {
+  margin-right: unset;
+}
+
+.contact-icon {
+  margin-right: 10px;
+  color: var(--font-color);
 }

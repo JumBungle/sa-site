@@ -10,9 +10,9 @@ function Carousel() {
   const [ticking, setTicking] = useState(true);
 
   const carouselCards = images.map((image, index) => (
-    <img
+    <div
       className="carousel-card"
-      src={`src/images/${image}`}
+      style={{ backgroundImage: `url(src/images/${image})` }}
       draggable="false"
       key={index}
     />
