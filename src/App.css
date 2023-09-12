@@ -1,0 +1,170 @@
+:root {
+  --primary-color: #fafafa;
+  --secondary-color: #fff;
+  --tertiary-color: #dcdcdc;
+  --font-color: #343434;
+  --title-font: 'Cormorant Garamond', serif;
+  --body-font: 'Open Sans', sans-serif;
+  --std-padding: 2vh 10vw; 
+  --box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+}
+
+html, body {
+  margin: 0;
+  font-size: 16px;
+}
+
+#root {
+  min-height: 100lvh;
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  color: var(--font-color);
+  font-family: var(--body-font);
+}
+
+h1, h2, h3 {
+  font-family: var(--title-font);
+  font-weight: 100;
+}
+
+.header {
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10vw;
+  background-color: var(--primary-color);
+  height: 10vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.home-link {
+  font-family: var(--title-font);
+  font-weight: 100;
+  font-size: xx-large;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header nav a {
+  font-family: var(--title-font);
+  font-size: x-large;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0 5%;
+}
+
+.header nav a:first-of-type {
+  margin-left: 0;
+}
+
+.header nav a:last-of-type {
+  margin-right: 0;
+}
+
+.header nav a:hover {
+  color: #505050;
+}
+
+.content {
+  flex: 1;
+  padding: 10vh 10vw;
+  background-color: var(--primary-color);
+}
+
+.about-page {
+  background-image: url("/src/images/Brennan-hero.jpg");
+  background-size: 50% 100%;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: var(--std-padding);
+  text-align: right;
+  background-color: var(--tertiary-color);
+}
+
+footer p {
+  margin-top: 0;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: var(--font-color);
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--font-color);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  flex: 1;
+}
+
+.col:first-of-type {
+  padding-right: 4vw;
+}
+
+.col:last-of-type {
+  padding-left: 4vw;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 5vh;
+  padding-top: 5vh;
+}
+
+.text-container:first-of-type {
+  padding-top: 0;
+}
+
+.text-container::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 70%;
+  height: 1px;
+  bottom: 0;
+  background-color: var(--font-color);
+}
+
+.text-container.no-after::after {
+  display: none;
+}
