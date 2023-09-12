@@ -1,5 +1,9 @@
 function Work() {
-  return <div>Work content goes here</div>;
+  return (
+    <div className="content">
+      <h1>Work</h1>
+    </div>
+  );
 }
 
 export default Work;
