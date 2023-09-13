@@ -29,7 +29,7 @@ function ProjectPage() {
         className="project-page-hero-image"
         src={`${path + project.name}-${project.hero}.jpg`}
       />
-      <div className="content">
+      <div className="content project-page">
         <div className="text-container no-after">
           <h1>{project?.displayName}</h1>
           {project.desription && (

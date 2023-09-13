@@ -60,3 +60,7 @@
 .project-description {
   white-space: pre-wrap;
 }
+
+.project-page {
+  padding: 5vh 10vw;
+}
