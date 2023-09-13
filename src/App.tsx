@@ -12,10 +12,12 @@ import Contact from "./pages/Contact";
 import ProjectPage from "./components/ProjectPage";
 import WorkIndex from "./pages/WorkIndex";
 import NoMatch from "./pages/NoMatch";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

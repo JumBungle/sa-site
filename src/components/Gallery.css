@@ -19,3 +19,9 @@
 .gallery-container img:last-of-type {
   margin-bottom: 0;
 }
+
+@media only screen and (max-width: 530px) {
+  .column {
+    min-width: 100%;
+  }
+}

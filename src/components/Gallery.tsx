@@ -1,5 +1,4 @@
-import React from "react";
-import { useColumns } from "../hooks/inColumns";
+import { useColumns } from "../hooks/useColumns";
 
 interface GalleryProps {
   images: string[];
@@ -12,7 +11,7 @@ function Gallery({ images, path }: GalleryProps) {
   return (
     <div className="gallery-container">
       {organizedImages.map((column, columnIndex) => (
-        <div key={columnIndex} className="gallery-column">
+        <div key={columnIndex} className="column">
           {column.map((image, imageIndex) => (
             <img src={`${path}${image}.jpg`} key={imageIndex} alt={image} />
           ))}
