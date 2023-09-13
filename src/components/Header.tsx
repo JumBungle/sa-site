@@ -5,16 +5,17 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsOpen((open: boolean) => !open);
+    setIsOpen(!isOpen);
   };
 
   const pages = ["work", "about", "contact"];
+
   const navItems = pages.map((page) => (
     <Link
-      onClick={toggleMenu}
       key={page}
       className="hover-underline-animation"
       to={"/" + page}
+      onClick={toggleMenu}
     >
       {page}
     </Link>
@@ -27,18 +28,9 @@ function Header() {
       </Link>
       <nav>{navItems}</nav>
       <button onClick={toggleMenu} className="menu-toggler">
-        {isOpen ? (
-          <i className="fa-solid fa-xmark fa-xl"></i>
-        ) : (
-          <i className="fa-solid fa-bars fa-xl"></i>
-        )}
+        <i className={`fa-solid fa-${isOpen ? "xmark" : "bars"} fa-xl`}></i>
       </button>
-      <div className={`mobile-menu ${isOpen ? "open" : ""}`}>
-        <Link onClick={toggleMenu} className="home-link" to="/">
-          Home
-        </Link>
-        {navItems}
-      </div>
+      <div className={`mobile-menu ${isOpen ? "open" : ""}`}>{navItems}</div>
     </div>
   );
 }
