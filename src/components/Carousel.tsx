@@ -12,7 +12,7 @@ function Carousel() {
   const carouselCards = images.map((image, index) => (
     <div
       className="carousel-card"
-      style={{ backgroundImage: `url(src/images/${image})` }}
+      style={{ backgroundImage: `url(/src/images/${image})` }}
       draggable="false"
       key={index}
     />

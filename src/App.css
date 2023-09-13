@@ -4,14 +4,14 @@
   --tertiary-color: #dcdcdc;
   --font-color: #343434;
   --title-font: 'Cormorant Garamond', serif;
-  --body-font: 'Open Sans', sans-serif;
+  --body-font:'Poppins', sans-serif;
   --std-padding: 2vh 10vw; 
   --box-shadow: 0 3px 6px rgba(0,0,0,0.23);
 }
 
 html, body {
   margin: 0;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 #root {
@@ -28,6 +28,21 @@ html, body {
 h1, h2, h3 {
   font-family: var(--title-font);
   font-weight: 100;
+}
+
+button {
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
 }
 
 .header {
@@ -137,6 +152,10 @@ footer p {
 .hover-underline-animation:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.hover-underline-animation.hul-tighter::after {
+  bottom: -5px;
 }
 
 .row {
