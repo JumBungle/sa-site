@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div className="content about-page">
+    <div className="content about-page centered">
       <div className="row">
         <div className="col">
           <div className="text-container">

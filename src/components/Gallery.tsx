@@ -1,21 +1,13 @@
+import React from "react";
+import { useColumns } from "../hooks/inColumns";
+
 interface GalleryProps {
   images: string[];
   path: string;
 }
 
 function Gallery({ images, path }: GalleryProps) {
-  const inColumns = (arr: string[], n: number) => {
-    const result = new Array(n).fill(0).map(() => [] as string[]);
-
-    for (let i = 0; i < arr.length; i++) {
-      result[i % n].push(arr[i]);
-    }
-
-    return result;
-  };
-
-  const numberOfColumns = 3;
-  const organizedImages = inColumns(images, numberOfColumns);
+  const organizedImages = useColumns(images, 3);
 
   return (
     <div className="gallery-container">

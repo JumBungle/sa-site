@@ -1,6 +1,7 @@
-import { Link, useSearchParams } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 import { projects } from "../data";
 import ProjectCard from "./ProjectCard";
+import { useColumns } from "../hooks/inColumns";
 
 function ProjectList() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -12,6 +13,9 @@ function ProjectList() {
   const filteredProjects = filter
     ? projects.filter((project) => project.type === filter)
     : projects;
+
+  // Use the useColumns hook to organize the filtered projects into columns
+  const organizedProjects = useColumns(filteredProjects, 3);
 
   return (
     <>
@@ -43,12 +47,17 @@ function ProjectList() {
         </button>
       </div>
       <div className="projects-wrapper">
-        {filteredProjects.map((project) => (
-          <ProjectCard
-            name={project.name}
-            displayName={project.displayName}
-            hero={project.hero}
-          />
+        {organizedProjects.map((column, columnIndex) => (
+          <div key={columnIndex} className="column">
+            {column.map((project, projectIndex) => (
+              <ProjectCard
+                key={projectIndex}
+                name={project.name}
+                displayName={project.displayName}
+                hero={project.hero}
+              />
+            ))}
+          </div>
         ))}
       </div>
     </>

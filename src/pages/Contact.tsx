@@ -1,6 +1,6 @@
 function Contact() {
   return (
-    <div className="content contact-page">
+    <div className="content contact-page centered">
       <div className="row">
         <div className="col"></div>
         <div className="col">

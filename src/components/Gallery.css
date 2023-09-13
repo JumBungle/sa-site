@@ -5,7 +5,7 @@
   gap: 1vw;
 }
 
-.gallery-column {
+.column {
   flex: 1;
   min-width: 400px;
 }
