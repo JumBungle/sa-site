@@ -1,7 +1,7 @@
 :root {
   --primary-color: #fafafa;
-  --secondary-color: #fff;
-  --tertiary-color: #dcdcdc;
+  --secondary-color: #e7e7e7;
+  --tertiary-color: #bebebe;
   --font-color: #343434;
   --title-font: "Cormorant Garamond", serif;
   --body-font: "Poppins", sans-serif;
@@ -281,7 +281,7 @@ footer p {
 
   .home-link {
     z-index: 8;
-    text-align: center;
+    font-size: larger;
   }
 
   .about-page,
@@ -302,7 +302,8 @@ footer p {
   }
 
   .header {
-    padding: 8svh 10vw;
+    padding: 2svh 10vw;
+    background-color: var(--secondary-color);
   }
 
   .header nav {

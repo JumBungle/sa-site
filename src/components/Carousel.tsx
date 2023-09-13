@@ -5,7 +5,7 @@ const images = ["Brennan-hero.jpg", "Kiernander-hero.jpg", "Oaia-hero.jpg"];
 
 function Carousel() {
   const carousel = useRef<HTMLDivElement>(null);
-  const { height, width } = useWindowDimensions();
+  const { width } = useWindowDimensions();
 
   const [ticking, setTicking] = useState(true);
 
