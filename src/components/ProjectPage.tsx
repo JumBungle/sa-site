@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import Gallery from "./Gallery";
-import { projects } from "../data";
+import { projects } from "../../public/data";
 import NoMatch from "../pages/NoMatch";
 
 function ProjectPage() {
@@ -9,7 +9,7 @@ function ProjectPage() {
 
   const project = projects.find((e) => e.name === projectName);
 
-  const path = "/src/images/projects/" + project?.name + "/";
+  const path = "/images/projects/" + project?.name + "/";
 
   if (!project) {
     return <NoMatch />;

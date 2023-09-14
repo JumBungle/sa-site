@@ -1,5 +1,5 @@
 import { useSearchParams } from "react-router-dom";
-import { projects } from "../data";
+import { projects } from "../../public/data";
 import ProjectCard from "./ProjectCard";
 import { useColumns } from "../hooks/useColumns";
 

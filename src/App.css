@@ -107,14 +107,14 @@ button {
 }
 
 .about-page {
-  background-image: url("/src/images/Brennan-hero.jpg");
+  background-image: url("/images/Brennan-hero.jpg");
   background-size: auto 100%;
   background-position: top 0 left 50vw;
   background-repeat: no-repeat;
 }
 
 .contact-page {
-  background-image: url("/src/images/Markham-dusk.jpg");
+  background-image: url("/images/Markham-dusk.jpg");
   background-size: auto 100%;
   background-position: top 0 right 50vw;
   background-repeat: no-repeat;
