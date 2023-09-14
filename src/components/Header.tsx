@@ -35,6 +35,9 @@ function Header() {
         <i className={`fa-solid fa-${isOpen ? "xmark" : "bars"} fa-xl`}></i>
       </button>
       <div className={`mobile-menu ${isOpen ? "open" : ""}`}>
+        <Link onClick={closeMenu} className="home-link" to="/">
+          Shanahan Architects
+        </Link>
         {navItems}
 
         <div className="mobile-only mobile-contact-btns">

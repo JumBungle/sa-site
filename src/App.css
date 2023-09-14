@@ -3,6 +3,7 @@
   --secondary-color: #e7e7e7;
   --tertiary-color: #bebebe;
   --font-color: #343434;
+  --icon-color: #505050;
   --title-font: "Cormorant Garamond", serif;
   --body-font: "Poppins", sans-serif;
   --std-padding: 2vh 10vw;
@@ -13,6 +14,8 @@ html,
 body {
   margin: 0;
   font-size: 18px;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 #root {
@@ -24,6 +27,10 @@ body {
 * {
   color: var(--font-color);
   font-family: var(--body-font);
+}
+
+i {
+  color: var(--icon-color);
 }
 
 h1,
@@ -38,6 +45,7 @@ button {
   border: none;
   cursor: pointer;
   background: none;
+  padding: 0;
 }
 
 .button-container {
@@ -229,11 +237,6 @@ footer p {
 
 .contact-icon {
   margin-right: 10px;
-  color: var(--font-color);
-}
-
-.menu-toggler i {
-  color: var(--font-color);
 }
 
 .menu-toggler,
@@ -245,20 +248,22 @@ footer p {
   z-index: 10;
   position: absolute;
   right: 10vw;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .mobile-menu {
   z-index: 5;
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: 0;
+  right: -100%;
   background-color: var(--primary-color);
-  height: 100vh;
+  height: 100svh;
   width: 100vw;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10vh;
+  transition: 0.3s ease-in;
 }
 
 .mobile-menu .nav-links {
@@ -278,7 +283,7 @@ footer p {
 .mobile-contact-btns a {
   padding: 10px;
   border-radius: 50%;
-  border: 1px solid var(--font-color);
+  border: 1px solid var(--icon-color);
   height: 30px;
   width: 30px;
   display: flex;
@@ -309,12 +314,15 @@ footer p {
     display: block;
   }
 
-  .mobile-menu.open {
+  .mobile-menu {
     display: flex;
   }
 
+  .mobile-menu.open {
+    right: 0;
+  }
+
   .home-link {
-    z-index: 8;
     font-size: larger;
   }
 
