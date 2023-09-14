@@ -97,7 +97,7 @@ button {
 
 .content {
   flex: 1;
-  padding: 2vh 10vw;
+  padding: 4vh 10vw;
   background-color: var(--primary-color);
 }
 
@@ -265,6 +265,13 @@ footer p {
   text-decoration: none;
 }
 
+.mobile-contact-btns {
+  width: 30vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @media only screen and (max-width: 968px) {
   body,
   button {
@@ -293,10 +300,6 @@ footer p {
     flex-direction: column;
   }
 
-  .content {
-    padding: 2vh 10vw;
-  }
-
   footer {
     justify-content: flex-start;
   }
@@ -307,6 +310,18 @@ footer p {
   }
 
   .header nav {
+    display: none;
+  }
+
+  .content.centered {
+    display: block;
+  }
+
+  .text-container h1 {
+    margin-top: 0.67em;
+  }
+
+  .hide-on-mobile {
     display: none;
   }
 }

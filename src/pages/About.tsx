@@ -18,7 +18,7 @@ function About() {
             </p>
           </div>
         </div>
-        <div className="col"></div>
+        <div className="col hide-on-mobile"></div>
       </div>
     </div>
   );

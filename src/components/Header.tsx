@@ -34,7 +34,17 @@ function Header() {
       <button onClick={toggleMenu} className="menu-toggler">
         <i className={`fa-solid fa-${isOpen ? "xmark" : "bars"} fa-xl`}></i>
       </button>
-      <div className={`mobile-menu ${isOpen ? "open" : ""}`}>{navItems}</div>
+      <div className={`mobile-menu ${isOpen ? "open" : ""}`}>
+        {navItems}
+        <div className="mobile-contact-btns">
+          <a href="tel:093793718">
+            <i className="fa-solid fa-phone contact-icon fa-lg" />
+          </a>
+          <a href="mailto:info@shanahanarchitects.co.nz">
+            <i className="fa-solid fa-envelope contact-icon fa-lg" />
+          </a>
+        </div>
+      </div>
     </div>
   );
 }
