@@ -17,7 +17,7 @@ function Header() {
   const navItems = pages.map((page) => (
     <Link
       key={page}
-      className="hover-underline-animation"
+      className="hover-underline-animation nav-links"
       to={"/" + page}
       onClick={toggleMenu}
     >
@@ -36,12 +36,13 @@ function Header() {
       </button>
       <div className={`mobile-menu ${isOpen ? "open" : ""}`}>
         {navItems}
-        <div className="mobile-contact-btns">
+
+        <div className="mobile-only mobile-contact-btns">
           <a href="tel:093793718">
-            <i className="fa-solid fa-phone contact-icon fa-lg" />
+            <i className="fa-solid fa-phone fa-lg" />
           </a>
           <a href="mailto:info@shanahanarchitects.co.nz">
-            <i className="fa-solid fa-envelope contact-icon fa-lg" />
+            <i className="fa-solid fa-envelope fa-lg" />
           </a>
         </div>
       </div>
