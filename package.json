@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://jumbungle.github.io/sa-site",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
@@ -13,7 +14,6 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.1",
-    "gh-pages": "^6.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.15.0"
@@ -27,8 +27,8 @@
     "eslint": "^8.45.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "gh-pages": "^6.0.0",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
-  },
-  "homepage": "https://jumbungle.github.io/sa-site"
+  }
 }
