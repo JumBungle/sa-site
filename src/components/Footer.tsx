@@ -2,7 +2,7 @@ function Footer() {
   return (
     <footer>
       <p className="hide-on-mobile">
-        11 Testing Street, Auckland CBD, Auckland 1011, New Zealand
+        11 Hargreaves Street, Auckland CBD, Auckland 1011, New Zealand
       </p>
       <div className="footer-contact-btns hide-on-mobile">
         <a href="tel:093793718">

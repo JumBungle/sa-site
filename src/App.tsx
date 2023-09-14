@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
 import "./App.css";
 import "./components/Carousel.css";
 import "./components/Projects.css";
@@ -16,7 +16,7 @@ import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <ScrollToTop />
       <Header />
       <Routes>
@@ -30,7 +30,7 @@ function App() {
         <Route path="*" element={<NoMatch />} />
       </Routes>
       <Footer />
-    </Router>
+    </BrowserRouter>
   );
 }
 
