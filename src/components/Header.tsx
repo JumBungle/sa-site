@@ -8,6 +8,10 @@ function Header() {
     setIsOpen(!isOpen);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   const pages = ["work", "about", "contact"];
 
   const navItems = pages.map((page) => (
@@ -23,7 +27,7 @@ function Header() {
 
   return (
     <div className="header">
-      <Link className="home-link" to="/">
+      <Link onClick={closeMenu} className="home-link" to="/">
         Shanahan Architects
       </Link>
       <nav>{navItems}</nav>
