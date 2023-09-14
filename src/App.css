@@ -14,8 +14,6 @@ html,
 body {
   margin: 0;
   font-size: 18px;
-  overflow-x: hidden;
-  overflow-y: scroll;
 }
 
 #root {
@@ -257,7 +255,7 @@ footer p {
   top: 0;
   right: -100%;
   background-color: var(--primary-color);
-  height: 100svh;
+  height: 100lvh;
   width: 100vw;
   flex-direction: column;
   justify-content: center;
