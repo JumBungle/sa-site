@@ -62,6 +62,7 @@ export const projects = [
     hero: 0,
     desription: null,
     type: "apartments",
+    credits: "Images supplied by Goldhawk Properties",
   },
   {
     name: "washington",

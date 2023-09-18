@@ -68,3 +68,8 @@
 .filter-options * {
   font-size: medium;
 }
+
+.project-credits {
+  font-size: small;
+  text-align: right;
+}

@@ -37,6 +37,9 @@ function ProjectPage() {
           )}
         </div>
         <Gallery images={imageNames} path={path} />
+        {project.credits && (
+          <p className="project-credits">Credits: {project.credits}</p>
+        )}
       </div>
     </>
   );
