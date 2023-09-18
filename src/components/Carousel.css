@@ -9,24 +9,32 @@
 .carousel-wrapper i {
   z-index: 5;
   height: 50px;
-  width: 50px;
-  background: #fff;
+  width: 40px;
+  background: #343434aa;
+  color: #fff;
   text-align: center;
   line-height: 50px;
-  border-radius: 50%;
+  border-radius: 4px;
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: calc(50% - 25px);
   transform: translateY(-50%);
   box-shadow: var(--box-shadow);
+  transition: 0.2s ease-out;
+}
+
+.carousel-wrapper i:hover {
+  background: #343434;
 }
 
 .carousel-wrapper i:first-child {
-  left: 25px;
+  left: 0px;
+  border-radius: 0 4px 4px 0;
 }
 
 .carousel-wrapper i:last-child {
-  right: 25px;
+  right: 0px;
+  border-radius: 4px 0 0 4px;
 }
 
 .carousel {

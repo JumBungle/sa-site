@@ -4,7 +4,7 @@ function About() {
       <div className="row">
         <div className="col">
           <div className="text-container">
-            <h1>Who We Are</h1>
+            <h1>About</h1>
             <p>
               Shanahan Architects has a wide experience in residential
               architecture with a diverse portfolio of projects including high

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,14 +15,14 @@ function Header() {
   const pages = ["work", "about", "contact"];
 
   const navItems = pages.map((page) => (
-    <Link
+    <NavLink
       key={page}
       className="hover-underline-animation nav-links"
       to={"/" + page}
       onClick={toggleMenu}
     >
       {page}
-    </Link>
+    </NavLink>
   ));
 
   return (

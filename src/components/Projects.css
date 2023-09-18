@@ -64,3 +64,7 @@
 .project-page {
   padding: 5vh 10vw;
 }
+
+.filter-options * {
+  font-size: medium;
+}

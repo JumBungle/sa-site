@@ -38,7 +38,7 @@ function Carousel() {
         if (carousel.current) {
           carousel.current.scrollLeft = carousel.current.scrollLeft + width;
         }
-      }, 3500);
+      }, 6000);
     }
 
     return () => {

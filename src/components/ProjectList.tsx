@@ -19,12 +19,16 @@ function ProjectList() {
 
   return (
     <>
-      <div className="button-container">
+      <div className="button-container filter-options">
         <span>Filter:</span>
         {["All", "Houses", "Apartments", "Subdivisions"].map((filterOption) => (
           <button
             key={filterOption}
-            className="hover-underline-animation hul-tighter"
+            className={`hover-underline-animation hul-tighter ${
+              (!filter && filterOption === "All") || filter === filterOption
+                ? "active"
+                : ""
+            }`}
             onClick={() => handleFilter(filterOption)}
           >
             {filterOption}
