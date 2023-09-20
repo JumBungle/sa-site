@@ -71,7 +71,7 @@ button {
 .home-link {
   font-family: var(--title-font);
   font-weight: 100;
-  font-size: xx-large;
+  font-size: 32px;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -84,7 +84,7 @@ button {
 
 .header nav a {
   font-family: var(--title-font);
-  font-size: x-large;
+  font-size: 24px;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -137,11 +137,11 @@ footer {
 }
 
 footer * {
-  font-size: smaller;
+  font-size: 14px;
 }
 
 footer p {
-  font-size: smaller;
+  font-size: 14px;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -264,7 +264,7 @@ footer p {
 
 .contact-icon {
   margin-right: 10px;
-  font-size: medium;
+  font-size: 16px;
 }
 
 .menu-toggler,
@@ -296,7 +296,7 @@ footer p {
 
 .mobile-menu .nav-links {
   font-family: var(--title-font);
-  font-size: x-large;
+  font-size: 24px;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -309,7 +309,7 @@ footer p {
 }
 
 .mobile-contact-btns a {
-  font-size: small;
+  font-size: 14px;
   padding: 4px;
   border-radius: 50%;
   border: 1px solid var(--icon-color);
@@ -352,7 +352,7 @@ footer p {
   }
 
   .home-link {
-    font-size: larger;
+    font-size: 24px;
   }
 
   .about-page,
