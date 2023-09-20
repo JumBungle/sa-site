@@ -9,7 +9,7 @@ function Footer() {
           <i className="fa-solid fa-phone contact-icon fa-lg" />
           (09) 379 3718
         </a>
-        <a href="mailto:info@shanahanarchitects.co.nz">
+        <a href="mailto:info@shanahanarchitects.co.nz?subject=Web Inquiry">
           <i className="fa-solid fa-envelope contact-icon fa-lg" />
           info@shanahanarchitects.co.nz
         </a>
@@ -26,7 +26,7 @@ function Footer() {
         <a href="tel:093793718">
           <i className="fa-solid fa-phone fa-lg" />
         </a>
-        <a href="mailto:info@shanahanarchitects.co.nz&subject=Web Inquiry">
+        <a href="mailto:info@shanahanarchitects.co.nz?subject=Web Inquiry">
           <i className="fa-solid fa-envelope fa-lg" />
         </a>
       </div>

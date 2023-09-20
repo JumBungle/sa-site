@@ -44,7 +44,7 @@ function Header() {
           <a href="tel:093793718">
             <i className="fa-solid fa-phone fa-lg" />
           </a>
-          <a href="mailto:info@shanahanarchitects.co.nz">
+          <a href="mailto:info@shanahanarchitects.co.nz?subject=Web Inquiry">
             <i className="fa-solid fa-envelope fa-lg" />
           </a>
         </div>
