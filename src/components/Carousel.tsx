@@ -1,7 +1,14 @@
 import { useRef, useEffect, useState } from "react";
 import useWindowDimensions from "../hooks/useWindowDimensions";
 
-const images = ["Brennan-hero.jpg", "Kiernander-hero.jpg", "Oaia-hero.jpg"];
+const images = [
+  "Oaia-hero.jpg",
+  "Brennan-hero.jpg",
+  "Kiernander-hero.jpg",
+  "Markham-hero.jpg",
+  "Kensington-hero.jpg",
+  "projects/oxford/oxford-0.jpg",
+];
 
 function Carousel() {
   const carousel = useRef<HTMLDivElement>(null);
