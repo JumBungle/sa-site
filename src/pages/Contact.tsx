@@ -30,7 +30,7 @@ function Contact() {
                 <span>(09) 379 3718</span>
               </a>
               <a
-                href="mailto:info@shanahanarchitects.co.nz"
+                href="mailto:info@shanahanarchitects.co.nz?subject=Web Inquiry"
                 className="contact-information hover-underline-animation"
               >
                 <i className="fa-solid fa-envelope fa-xl contact-icon" />
