@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import Gallery from "./Gallery";
 import { projects } from "../../public/data";
 import NoMatch from "../pages/NoMatch";
+import ScrollTopButton from "./ScrollTopButton";
 
 function ProjectPage() {
   const params = useParams();
@@ -41,6 +42,7 @@ function ProjectPage() {
           <p className="project-credits">Credits: {project.credits}</p>
         )}
       </div>
+      <ScrollTopButton />
     </>
   );
 }

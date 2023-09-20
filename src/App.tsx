@@ -3,6 +3,7 @@ import "./App.css";
 import "./components/Carousel.css";
 import "./components/Projects.css";
 import "./components/Gallery.css";
+import "./components/ScrollTopButton.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";

@@ -1,0 +1,51 @@
+.scroll-top-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 80px;
+  right: 40px;
+  background-color: #343434aa;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  transition: 0.2s ease-out;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.scroll-top-icon {
+  font-size: 16px;
+  transition: 0.2s ease-out;
+  color: #fff;
+}
+
+.scroll-top-button:hover {
+  background-color: #343434;
+}
+
+.scroll-top-button:hover .scroll-top-icon {
+  transform: translate(0, -5px);
+}
+
+.hide-scroll-button {
+  opacity: 0;
+  user-select: none;
+  cursor: auto;
+}
+
+@media only screen and (max-width: 968px) {
+  .scroll-top-button:hover .scroll-top-icon {
+    transform: translate(0, 0);
+  }
+
+  .scroll-top-button {
+    background-color: #343434dd;
+    right: calc(50% - 20px);
+  }
+
+  .scroll-top-button:hover {
+    background-color: #343434dd;
+  }
+}
