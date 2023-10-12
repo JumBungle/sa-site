@@ -17,7 +17,7 @@ import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
-    <BrowserRouter basename="/sa-site/">
+    <BrowserRouter>
       <ScrollToTop />
       <Header />
       <Routes>
