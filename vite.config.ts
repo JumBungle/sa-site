@@ -7,5 +7,5 @@ export default defineConfig({
     host:true,
   },
   plugins: [react()],
-  base: "/sa-site/"
+  base: "/"
 })

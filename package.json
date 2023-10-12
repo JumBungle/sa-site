@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://jumbungle.github.io/sa-site",
+  "homepage": "/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
