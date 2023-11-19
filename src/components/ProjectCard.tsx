@@ -14,7 +14,7 @@ function ProjectCard(props: ProjectCard) {
       onClick={() => navigate("/work/" + props.name)}
       className="project-card"
       style={{
-        backgroundImage: `url(/sa-site/images/projects/${props.name}/${props.name}-${props.hero}.jpg)`,
+        backgroundImage: `url(/images/projects/${props.name}/${props.name}-${props.hero}.jpg)`,
       }}
     >
       <div className="project-card-overlay" />
