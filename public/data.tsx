@@ -56,6 +56,14 @@ export const projects = [
     type: "houses",
   },
   {
+    name: "webber",
+    displayName: "Webber",
+    images: 2,
+    hero: 0,
+    desription: null,
+    type: "houses",
+  },
+  {
     name: "rawhitiroa",
     displayName: "Rawhitiroa",
     images: 8,
@@ -75,7 +83,7 @@ export const projects = [
   {
     name: "patteson",
     displayName: "Patteson Ave",
-    images: 4,
+    images: 10,
     hero: 0,
     desription: null,
     type: "apartments",
@@ -99,7 +107,7 @@ export const projects = [
   {
     name: "kensington",
     displayName: "Kensington Park",
-    images: 5,
+    images: 9,
     hero: 0,
     desription: null,
     type: "subdivisions",
